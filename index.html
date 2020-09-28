@@ -4,17 +4,18 @@
     <title>머신러닝 서비스</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="./mltest_files/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="./mltest_files/tf.min.js"></script>
-    <script src="./mltest_files/teachablemachine-image.min.js"></script>
-    <link rel="stylesheet" href="./mltest_files/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="./mltest_files/style.css">
+    <script src="mltest_files/jquery-3.4.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="mltest_files/tf.min.js"></script>
+    <script src="mltest_files/teachablemachine-image.min.js"></script>
+    <link rel="stylesheet" href="mltest_files/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mltest_files/style.css">
 </head>
 
 <body>
     <section class="section">
-        <h1 class="title">머신러닝 서비스</h1>
-        <h2 class="subtitle">사진 분류 머신러닝 서비스</h2>
+        <p class="title">머신러닝 서비스</p>
+        <p class="subtitle">사진 분류 머신러닝 서비스</p>
     </section>
 
     <div class="mt-3 container file-upload">
@@ -83,6 +84,7 @@
             $('.file-upload-content').hide();
             $('.image-upload-wrap').show();
         }
+
         $('.image-upload-wrap').bind('dragover', function() {
             $('.image-upload-wrap').addClass('image-dropping');
         });
@@ -107,11 +109,11 @@
 
         async function predict() {
             var dic_class2information = {};
-            dic_class2information['시츄'] = '설명1';
-            dic_class2information['푸들'] = '설명2';
-            dic_class2information['포메라니안'] = '설명3';
-            dic_class2information['요크셔테리어'] = '설명3';
-            dic_class2information['닥스훈트'] = '설명3';
+            dic_class2information['시츄'] = '사자머리 같은 머리에 납작한 코, 먼지떨이 같은 꼬리, 무성 영화를 보는 것 같은 빠르고도 귀여운 몸짓 등이 인상적인 품종이다.';
+            dic_class2information['푸들'] = '외모처럼 깜찍하고 사교적인 성격을 갖고 있어 애교를 잘 부린다. 지혜롭고 영리해 사람의 말을 잘 알아듣고 훈련에 잘 따른다.';
+            dic_class2information['포메라니안'] = '여우와 비슷한 깜찍한 얼굴에 작은 눈망울이 매력적이고 보호본능이 생기는 귀여운 품종이다.';
+            dic_class2information['요크셔테리어'] = '외로움을 심하게 타는 편이라 주인과 떨어져 있기 싫어하고 주인에 대한 소유욕이 크고 질투심도 강한 편. 집안에 어린아이가 있을 경우 질투심을 더 심하게 느끼기도 한다.';
+            dic_class2information['닥스훈트'] = '명랑하고 장난스러운 성격으로 활동하는 것을 좋아하며 주인의 말을 잘 이해해 좋은 친구로 지내기 적합하다.';
 
             var image = document.getElementById("face-image");
             const prediction = await model.predict(image, false);

@@ -1,27 +1,17 @@
-@font-face {
-  font-family: 'Hanna';
-  font-style: normal;
-  font-weight: 400;
-  src: url(//fonts.gstatic.com/ea/hanna/v3/BM-HANNA.eot);
-  src: url(//fonts.gstatic.com/ea/hanna/v3/BM-HANNA.eot?#iefix) format('embedded-opentype'),
-       url(//fonts.gstatic.com/ea/hanna/v3/BM-HANNA.woff2) format('woff2'),
-       url(//fonts.gstatic.com/ea/hanna/v3/BM-HANNA.woff) format('woff'),
-       url(//fonts.gstatic.com/ea/hanna/v3/BM-HANNA.ttf) format('truetype');
-}
-
 body {
-  font-family: 'Hanna', serif;  
-  background-color: #ffffff;
+  font-family: 'Nanum Gothic', sans-serif;
+  background-color: #f0ece3;
   box-sizing: border-box;
   color: #734226;
   word-break: keep-all
 }
+
 .file-upload {
     padding: 5% 2%;
     margin: 0 auto;
     border-radius: 10px;
     border: solid 1.5px #f3f1ee;
-    background-color: #f3f1ee;
+    background-color: #dfd3c3;
 }
 .file-upload-btn {
   width: 100%;
@@ -147,17 +137,22 @@ body {
 }
 
 .title {
-  padding: 2% 1%;
+  padding: 3% 1% 1% 1%;
   line-height: 1.67;
   text-align: center;
-  color: #402312;
+  color: #595238;
+  font-weight: 800;
+  font-size: 4em;
+  text-shadow: 3px 3px 4px #eaeaea;
 }
 
 .subtitle {
-  padding: 4% 1%;
+  padding: 2% 1%;
   line-height: 1.53;
   text-align: center;
-  color: #402312;
+  color: #b49c73;
+  font-size: 2em;
+  margin: 0;
 }
 
 /* On screens that are 600px or less, set the background color to olive */
