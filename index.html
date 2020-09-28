@@ -127,7 +127,7 @@
                 resultTitle = "알수없음";
                 resultExplain = "";
             }
-            var title = "<div class='" + prediction[0].className + "-animal-title'>" + resultTitle + "</div>"
+            var title = "<div class='" + prediction[0].className + "-animal-title' style='font-weight: 600;'>" + resultTitle + "</div>"
             var explain = "<div class='animal-explain pt-2'>" + resultExplain + "</div>"
             $('.result-message').html(title + explain);
             var barWidth;

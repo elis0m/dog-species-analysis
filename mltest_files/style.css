@@ -7,7 +7,7 @@ body {
 }
 
 .file-upload {
-    padding: 5% 2%;
+    padding: 5% 2% 2% 2%;
     margin: 0 auto;
     border-radius: 10px;
     border: solid 1.5px #f3f1ee;
@@ -322,6 +322,7 @@ body {
 #label-container {
     width: 80%;
     margin: 0 auto;
+    padding: 2% 0 2% 0;
 }
 .result-message {
     font-size: 2rem;
