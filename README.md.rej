@@ -1,0 +1,6 @@
+diff a/README.md b/README.md	(rejected hunks)
+@@ -1,2 +1,2 @@
+-# 수원대학교 빅데이터분석
+-머신러닝 서비스 실습을 위한 웹페이지 템플릿입니다.
++# Dog species analysis
++머신러닝 서비스 실습
